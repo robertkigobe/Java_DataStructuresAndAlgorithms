@@ -1,5 +1,13 @@
 import java.util.Arrays;
 
+/*
+* this swaps adjacent elements from the tail end
+* this needs n-1 passes
+* n is the length of the array
+* complexity is bigO(n2)
+* swapping assigns one of the elements into a temprary variable
+* */
+
 public class BubbleSort {
     public static void main(String[] args) {
         BubbleSort bubbleSort = new BubbleSort();
@@ -13,7 +21,7 @@ public class BubbleSort {
         System.out.println(Arrays.toString(numbers1));
         System.out.println(Arrays.toString(numbers2));
     }
-
+    //original bubble sort
     public void sort(int[] numbers) {
         for (int i = 1; i < numbers.length; i++) {
             for (int j = 0; j < numbers.length - 1; j++) {
